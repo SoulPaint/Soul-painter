@@ -1,0 +1,74 @@
+a {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.menu {
+    width: 200px;
+    height: 100px;
+    background-color: #9b9b9b;
+    text-align: center;
+    font-size: 36px;
+    color: black;
+    overflow: hidden;
+
+
+}
+
+.menu:hover {
+    color: aliceblue;
+    background-color: darkred;
+
+}
+
+.menu:active {
+    color: #00ffe2;
+    background-color: #5a0202;
+}
+
+.menuText {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+
+
+}
+.menuText:hover {
+     animation: moveUp100 1s 1;
+}
+@keyframes moveUp100{
+    from{
+        top: 0px;
+    }
+    to{
+        top: -100px;
+    }
+}
+
+.menuTextUP {
+    height: 100px;
+    position: relative;
+    top: 10px;
+
+}
+
+.menuTextDown {
+    height: 100px;
+    color: deeppink;
+    position: relative;
+    top: 10px;
+
+}

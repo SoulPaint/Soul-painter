@@ -1,0 +1,30 @@
+ol, ul {
+    list-style: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%
+}
+
+em {
+    font-style: normal
+}
+.listtitle ul {
+    overflow:hidden;
+    height:300px;
+}
+
+.listtitle ul li {
+    height: 39px;
+    line-height: 39px;
+    padding:0 15px
+}
+.neiBu {
+    width: 50px;
+    height: 50px;
+    background-color: darkseagreen;
+    margin-top: 50%;
+    transform:  translate(0,-50%);
+
+
+}
