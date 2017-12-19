@@ -1,3 +1,6 @@
+<body>
+
+
 a {
     text-decoration: none;
 }
@@ -71,4 +74,15 @@ a:active {
     position: relative;
     top: 10px;
 
+}
+#out{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+$in{
+    position: relativel;
+    top: 50%;
+        left:50%;
+    transform: (0,50%)；
 }
