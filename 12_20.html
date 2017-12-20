@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="MyWeb.css">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id='picbox' class="row">
+        <div id='minpic' class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img id='tupian' src="Web/%E7%86%8A%E6%8E%8C.png" style="background-color: black" alt="...">
+                <h4 id='wenzi'>hello</h4>
+            </a>
+        </div>
+    </div>
+    <script>
+        //        $('#picbox').append($('#minpic').clone());
+        var ber={
+            src:"Web/%E7%86%8A%E6%8E%8C.png",
+            wenzi:'熊',
+        }
+
+        var sousuo={
+            src:'Web/搜索.png',
+            wenzi:'搜索',
+
+        }
+
+        function fuzhi() {
+            var fuben = $('#minpic').clone(); //给克隆对象取个外号
+            fuben.find('#wenzi').html('yahoo!'); //在克隆对象里面找到文字并修改
+            fuben.find('#wenzi').css({
+                color: '#00A'
+            });
+            fuben.find('#tupian').attr('src','Web/搜索.png');
+            fuben.appendTo($('#picbox')); //把克隆对象添加到box里面去
+        }
+        fuzhi(bei);
+        fuzhi(sousuo);
+        fuzhi();
+    </script>
+</body>
+</html>
